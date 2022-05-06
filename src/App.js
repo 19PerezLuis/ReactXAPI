@@ -21,7 +21,7 @@ function App() {
       <ul>
       { !todos ? 'Cargando...':
       todos.map( (todo,index)=>{
-        return<li>{todo.title }</li>
+        return<li>{todo.title}{todo.completed ? ': ✅':': ❌'}</li>
       })
       }
       </ul>
